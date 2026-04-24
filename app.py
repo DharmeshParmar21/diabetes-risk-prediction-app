@@ -1,0 +1,51 @@
+import streamlit as st
+import numpy as np
+import pickle
+
+# -----------------------
+# Load model
+# -----------------------
+model = pickle.load(open("models/model.pkl", "rb"))
+scaler = pickle.load(open("models/scaler.pkl", "rb"))
+
+# -----------------------
+# UI
+# -----------------------
+st.title("🩺 Diabetes Prediction App")
+st.write("Enter patient details below:")
+
+# -----------------------
+# Inputs (simple & clean)
+# -----------------------
+preg = st.number_input("Pregnancies", min_value=0, max_value=20, value=1)
+
+glucose = st.number_input("Glucose", min_value=0, max_value=200, value=120)
+
+bp = st.number_input("Blood Pressure", min_value=0, max_value=150, value=70)
+
+skin = st.number_input("Skin Thickness", min_value=0, max_value=100, value=20)
+
+insulin = st.number_input("Insulin", min_value=0, max_value=900, value=80)
+
+bmi = st.number_input("BMI", min_value=0.0, max_value=70.0, value=25.0)
+
+dpf = st.number_input("Diabetes Pedigree Function", min_value=0.0, max_value=3.0, value=0.5)
+
+age = st.number_input("Age", min_value=1, max_value=120, value=30)
+
+# -----------------------
+# Prediction
+# -----------------------
+if st.button("Predict"):
+
+    data = np.array([[preg, glucose, bp, skin, insulin, bmi, dpf, age]])
+    data = scaler.transform(data)
+
+    prob = model.predict_proba(data)[0][1]
+
+    st.write(f"Probability of Diabetes: {prob:.2f}")
+
+    if prob > 0.5:
+        st.error("⚠️ Diabetic")
+    else:
+        st.success("✅ Not Diabetic")
