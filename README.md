@@ -7,16 +7,16 @@ It includes EDA, model building, evaluation, and a deployed Streamlit app.
 ---
 
 ## 📑 Table of Contents
-- 📸 App Preview
-- 📊 Key Insights
-- 🤖 Model Performance
-- 🎯 Features
-- ⚙️ Tech Stack
-- ▶️ How to Run
-- 🌐 Live App
-- 📁 Project Structure
-- ⚠️ Disclaimer
-- 🙌 Author
+- [📸 App Preview](#app-preview)
+- [📊 Key Insights](#key-insights)
+- [🤖 Model Performance](#model-performance)
+- [🎯 Features](#features)
+- [⚙️ Tech Stack](#tech-stack)
+- [▶️ How to Run](#how-to-run)
+- [🌐 Live App](#live-app)
+- [📁 Project Structure](#project-structure)
+- [⚠️ Disclaimer](#disclaimer)
+- [🙌 Author](#author)
 
 ---
 
