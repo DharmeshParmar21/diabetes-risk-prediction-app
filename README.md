@@ -22,7 +22,7 @@ It includes EDA, model building, evaluation, and a deployed Streamlit app.
 
 ## 📸 App Preview
 
-![App Result](images/app_result.png)
+![App Result](Images/app_result.png)
 
 Insight:  
 The application takes user input and predicts diabetes probability along with classification output.
@@ -32,7 +32,7 @@ The application takes user input and predicts diabetes probability along with cl
 ## 📊 Key Insights
 
 ### 🔥 Glucose vs Outcome
-![Glucose vs Outcome](images/glucose_vs_outcome.png)
+![Glucose](Images/glucose_vs_outcome.png)
 
 Insight:  
 Diabetic patients have significantly higher glucose levels, making glucose the strongest predictor.
@@ -40,7 +40,8 @@ Diabetic patients have significantly higher glucose levels, making glucose the s
 ---
 
 ### 📈 Correlation Heatmap
-![Correlation Heatmap](images/correlation_heatmap.png)
+![Heatmap](Images/correlation_heatmap.png)
+
 
 Insight:  
 Glucose shows the highest correlation with outcome, followed by BMI and Age.
@@ -124,4 +125,4 @@ This project is for educational purposes only and not a medical diagnosis tool.
 
 ## 🙌 Author
 
-Your Name
+Dharmesh Parmar
