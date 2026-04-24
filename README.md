@@ -7,61 +7,60 @@ It includes EDA, model building, evaluation, and a deployed Streamlit app.
 ---
 
 ## 📑 Table of Contents
-- [📸 App Preview](#app-preview)
-- [📊 Key Insights](#key-insights)
-- [🤖 Model Performance](#model-performance)
-- [🎯 Features](#features)
-- [⚙️ Tech Stack](#tech-stack)
-- [▶️ How to Run](#how-to-run)
-- [🌐 Live App](#live-app)
-- [📁 Project Structure](#project-structure)
-- [⚠️ Disclaimer](#disclaimer)
-- [🙌 Author](#author)
+- [App Preview](#app-preview)
+- [Key Insights](#key-insights)
+- [Model Performance](#model-performance)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [How to Run](#how-to-run)
+- [Live App](#live-app)
+- [Project Structure](#project-structure)
+- [Disclaimer](#disclaimer)
+- [Author](#author)
 
 ---
 
-## 📸 App Preview
+## App Preview
 
 ![App Result](Images/app_result.png)
 
-Insight:  
+**Insight:**  
 The application takes user input and predicts diabetes probability along with classification output.
 
 ---
 
-## 📊 Key Insights
+## Key Insights
 
-### 🔥 Glucose vs Outcome
+### Glucose vs Outcome
 ![Glucose](Images/glucose_vs_outcome.png)
 
-Insight:  
+**Insight:**  
 Diabetic patients have significantly higher glucose levels, making glucose the strongest predictor.
 
 ---
 
-### 📈 Correlation Heatmap
+### Correlation Heatmap
 ![Heatmap](Images/correlation_heatmap.png)
 
-
-Insight:  
+**Insight:**  
 Glucose shows the highest correlation with outcome, followed by BMI and Age.
 
 ---
 
-## 🤖 Model Performance
+## Model Performance
 
-Metric | Value  
--------|--------
-Accuracy | ~0.75  
-ROC-AUC | ~0.82  
-Recall | ~0.72  
+| Metric   | Value |
+|----------|--------|
+| Accuracy | ~0.75 |
+| ROC-AUC  | ~0.82 |
+| Recall   | ~0.72 |
 
-Insight:  
+**Insight:**  
 Model shows strong class separation and improved recall to reduce missed diabetic cases.
 
 ---
 
-## 🎯 Features
+## Features
 
 - Exploratory Data Analysis (EDA)
 - Multiple model comparison
@@ -71,7 +70,7 @@ Model shows strong class separation and improved recall to reduce missed diabeti
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 
 - Python  
 - Pandas, NumPy  
@@ -81,7 +80,7 @@ Model shows strong class separation and improved recall to reduce missed diabeti
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
 git clone https://github.com/your-username/diabetes-risk-prediction-app.git  
 cd diabetes-risk-prediction-app  
@@ -91,17 +90,17 @@ streamlit run app.py
 
 ---
 
-## 🌐 Live App
+## Live App
 
 👉 https://your-streamlit-link.streamlit.app
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 Diabetes-Prediction/  
 │  
-├── images/  
+├── Images/  
 │   ├── app_result.png  
 │   ├── correlation_heatmap.png  
 │   ├── glucose_vs_outcome.png  
@@ -117,12 +116,12 @@ Diabetes-Prediction/
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 This project is for educational purposes only and not a medical diagnosis tool.
 
 ---
 
-## 🙌 Author
+## Author
 
 Dharmesh Parmar
