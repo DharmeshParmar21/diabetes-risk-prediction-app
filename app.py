@@ -5,9 +5,16 @@ import pickle
 # -----------------------
 # Load model
 # -----------------------
-model = pickle.load(open("models/model.pkl", "rb"))
-scaler = pickle.load(open("models/scaler.pkl", "rb"))
+import os
+import pickle
 
+BASE_DIR = os.path.dirname(__file__)
+
+model_path = os.path.join(BASE_DIR, "models", "model.pkl")
+scaler_path = os.path.join(BASE_DIR, "models", "scaler.pkl")
+
+model = pickle.load(open(model_path, "rb"))
+scaler = pickle.load(open(scaler_path, "rb"))
 # -----------------------
 # UI
 # -----------------------
