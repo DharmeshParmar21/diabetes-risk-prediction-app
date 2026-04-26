@@ -92,7 +92,7 @@ streamlit run app.py
 
 ## Live App
 
-👉 https://your-streamlit-link.streamlit.app
+👉 https://diabetes-risk-prediction-app-zfpxpje7lzwdekep9c6zjj.streamlit.app/
 
 ---
 
